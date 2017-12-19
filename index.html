@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Editor With VUE</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="C:\Users\brian\Code\Web\FormEditor\css\bootstrap-theme.css" rel="stylesheet"></link:href>
+    <script src="./js/libs/vue.js"></script>
+    <style>
+        [v-cloak] { display: none; }
+    </style>
+</head>
+<body>
+
+    <!-- app begin -->
+    <div id="app" class="container" v-cloak>
+        <p class="lead">Welcome {{userName}},</p>
+        <div id="build-container">
+            <div id="init" v-if="notInit">
+                <button v-on:click="initForm">Create Form</button>
+                <button v-on:click="loadForm">Load Form</button>
+            </div>
+            <div id="evalForm" v-else v-cloak>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- app end -->
+
+
+    <!-- includes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src=".\js\libs\bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
